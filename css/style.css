@@ -22,13 +22,25 @@ header {
 .fa-bell {
     color: var(--ms-bell-color);
 }
-.dropdown-toggle::after {
-    content: none;
+#bell::after {
+    display: none;
 }
 /*----------------
    ASIDE
 ----------------*/
-
+aside {
+    background-color: #061e34;
+    width: 160px;
+    height: 100vh;
+    padding: 1.875rem 0;
+}
+.col-sidebar {
+    height: 100%;
+}
+.col-sidebar-up a, .col-sidebar-down a {
+    text-decoration: none;
+    color: #fff;
+}
 /*----------------
    MAIN
 ----------------*/
