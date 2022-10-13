@@ -8,6 +8,7 @@
     --ms-bar-color: #e5e5e5;
     --ms-headertab-color: #f7f7f7;
     --ms-bell-color: #ff8f00;
+    --ms-badge-bc: #185bb9;
 }
 /*----------------
    HEADER
@@ -18,6 +19,9 @@ header {
 }
 .logo {
     width: 100%;
+}
+.form-search input {
+    background-color: var(--ms-bar-color);
 }
 .fa-bell {
     color: var(--ms-bell-color);
@@ -31,7 +35,7 @@ header {
 aside {
     background-color: #061e34;
     width: 160px;
-    height: 100vh;
+    height: calc(100Vh - 3.125rem);
     padding: 1.875rem 0;
 }
 .col-sidebar {
@@ -41,6 +45,32 @@ aside {
     text-decoration: none;
     color: #fff;
 }
+.col-sidebar .col-2 {
+    padding-left: 0;
+    padding-right: 0;
+} 
+.col-sidebar-up li {
+    list-style: none;
+}
+.col-sidebar-down {
+    padding-left: 2rem;
+}
 /*----------------
    MAIN
 ----------------*/
+.main-header {
+    background-color: var(--ms-secondary-color);
+    color: #fff;
+}
+main {
+    height: calc(100vh - 3.125rem);
+    width: calc(100vw - 9.375rem);
+}
+#ms-badge {
+    background-color: var(--ms-badge-bc);
+    border-radius: 20%;
+    padding: 0 .3125rem;
+}
+.student-number {
+    font-size: 30px;
+}

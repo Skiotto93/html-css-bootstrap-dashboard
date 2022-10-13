@@ -23,8 +23,8 @@
                     <img class="logo" src="img/logo.svg" alt="#">
                 </div>
                 <div class="col-10">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <form class="d-flex form-search" role="search">
+                        <input class="form-control me-2" type="search" placeholder="&#x1F50D; Search" aria-label="Search">
                     </form>
                 </div>
                 <div class="col-1">
@@ -46,38 +46,78 @@
         </header>
         <!--/Header-->
         <!--Sidebar-->
-        <aside>
-            <nav>
-                <ul>
-                    <li>
-                        <div class="col-sidebar">
-                            <div class="col-sidebar-up d-flex flex-column">
-                                <a href="#">
-                                    <i class="fa-sharp fa-solid fa-house"></i>
-                                    <span>Home</span>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-solid fa-chart-simple"></i>
-                                    <span>Stats</span>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-solid fa-signal"></i>
-                                    <span>Signal</span>
-                                </a>
-                            </div>                        
-                            <div class="col-sidebar-down">
-                                <a href="#">
-                                    <i class="fa-solid fa-gear"></i>
-                                    <span>Admin</span>
-                                </a>
+        <section class="d-flex">
+            <aside>
+                <div class="col-sidebar d-flex flex-column">
+                    <div class="col-sidebar-up d-flex flex-column mb-auto">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a class="row align-items-center mb-3" href="#">
+                                        <i class="col-2 fa-sharp fa-solid fa-house"></i>
+                                        <span class="col">Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="row align-items-center mb-3" href="#">
+                                        <i class="col-2 fa-solid fa-chart-simple"></i>
+                                        <span class="col">Stats</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="row align-items-center mb-3" href="#">
+                                        <i class="col-2 fa-solid fa-signal"></i>
+                                        <span class="col">Signal</span>
+                                    </a>                            
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>                        
+                    <div class="col-sidebar-down">
+                        <a class="row align-items-center" href="#">
+                            <i class="col-2 fa-solid fa-gear"></i>
+                            <span class="col">Admin</span>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+            <!--/Sidebar-->
+            <!--Main-->
+            <main>
+                <header class="main-header">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="col-12 d-flex">
+                                <h1>Boolean</h1>
+                                <button id="ms-badge" type="button" class="btn btn-primary">
+                                <small>Piano Blaze</small>
+                                </button>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <button id="ms-badge" type="button" class="btn btn-primary">
+                                    <small>3 app</small>
+                                </button>
+                                <i class="fa-solid fa-angles-right ms-3"></i>
+                                <button id="ms-badge" type="button" class="btn btn-primary ms-3">
+                                    <small>Boolean mobile app</small>
+                                </button>
+                                <button id="ms-badge" type="button" class="btn btn-primary ms-3">
+                                    <small>Boolean web app</small>
+                                </button>
+                                <button id="ms-badge" type="button" class="btn btn-primary ms-3">
+                                    <small>Boolean blog app</small>
+                                </button>
                             </div>
                         </div>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-        <!--/Sidebar-->
-        <main></main>
+                        <div class="col-4">
+                            <p>Studenti online negli ultimi 30 minuti</p>
+                            <span class="student-number">125</span>
+                        </div>
+                    </div>
+                </header>
+            </main>
+        </section>
+        <!--/Main-->
         <!--link javascript-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>
