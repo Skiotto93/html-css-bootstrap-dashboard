@@ -1,0 +1,23 @@
+/*----------------
+   COMMON
+----------------*/
+:root {
+    --ms-primary-color: #f8f9fa;
+    --ms-color-aside: #061e34;
+    --ms-secondary-color: #1c71e8;
+    --ms-bar-color: #e5e5e5;
+    --ms-headertab-color: #f7f7f7;
+}
+/*----------------
+   HEADER
+----------------*/
+header {
+    background-color: var(--ms-primary-color);
+}
+/*----------------
+   ASIDE
+----------------*/
+
+/*----------------
+   MAIN
+----------------*/
