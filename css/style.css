@@ -29,6 +29,9 @@ header {
 .logo {
     width: 100%;
 }
+.logosmall {
+    max-width: 50px;
+}
 .form-search input {
     background-color: var(--ms-bar-color);
 }
@@ -43,8 +46,9 @@ header {
 ----------------*/
 aside {
     background-color: #061e34;
-    background-image: url(img/sidebar-bg.png);
-    width: auto;
+    background-image: url("img/sidebar-bg.png");
+    background-position: center;
+    background-size: cover;
     padding: 1.875rem 0;
     flex-shrink: 0;
     flex-grow: 1;
@@ -54,6 +58,10 @@ aside {
 }
 .col-sidebar-up a, .col-sidebar-down a {
     text-decoration: none;
+    color: #fff;
+}
+.sidebar-items:hover {
+    background-color: #185bb9;
     color: #fff;
 }
 .col-sidebar .col-2 {
@@ -66,6 +74,7 @@ aside {
 .col-sidebar-down {
     padding-left: 2rem;
 }
+
 /*----------------
    MAIN
 ----------------*/
@@ -89,7 +98,7 @@ main {
 }
 .card-right {
     border: 1px solid #d2d2d2;
-    margin: 1.25rem;   
+    margin: 1.25rem 0 1.25rem 1.25rem;   
     border-radius: .625rem;
 }
 .card-left {
@@ -143,4 +152,7 @@ main {
     color: white;
     border-color: white;
     background-color: #1c71e8;
+}
+.wrap {
+    flex-wrap: wrap;
 }
