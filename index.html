@@ -19,7 +19,7 @@
         <!--Header-->
         <header>
             <div class="row align-items-center">
-                <div class="col-1">
+                <div class="col-auto">
                     <img class="logo" src="img/logo.svg" alt="#">
                 </div>
                 <div class="col-10">
@@ -27,12 +27,12 @@
                         <input class="form-control me-2" type="search" placeholder="&#x1F50D; Search" aria-label="Search">
                     </form>
                 </div>
-                <div class="col-1">
-                    <div class="d-flex justify-content-between align-items-center">
+                <div class="col-auto">
+                    <div class="d-flex align-items-center">
                         <i class="fa-solid fa-list"></i>
-                        <i class="fa-solid fa-circle-question"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                        <div class="dropdown">
+                        <i class="fa-solid fa-circle-question ms-4"></i>
+                        <i class="fa-solid fa-ellipsis-vertical ms-4"></i>
+                        <div class="dropdown ms-4">
                             <i id="bell" class="fa-solid fa-bell dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i> 
                             <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="#">Profilo</a></li>
@@ -89,7 +89,7 @@
                         <div class="col-8 d-flex align-items-center">
                             <h1>Boolean</h1>
                             <div>
-                                <button id="ms-badge" type="button" class="btn btn-primary ms-3">
+                                <button id="ms-badge" type="button" class="btn btn-primary ms-2">
                                 <small>Piano Blaze</small>
                                 </button>
                             </div>
@@ -104,13 +104,13 @@
                                 <small>3 app</small>
                             </button>
                             <i class="fa-solid fa-angles-right ms-3"></i>
-                            <button id="ms-badge" type="button" class="btn btn-primary ms-3">
+                            <button id="ms-badge" type="button" class="btn btn-primary ms-2">
                                 <small>Boolean mobile app</small>
                             </button>
-                            <button id="ms-badge" type="button" class="btn btn-primary ms-3">
+                            <button id="ms-badge" type="button" class="btn btn-primary ms-2">
                                 <small>Boolean web app</small>
                             </button>
-                            <button id="ms-badge" type="button" class="btn btn-primary ms-3">
+                            <button id="ms-badge" type="button" class="btn btn-primary ms-2">
                                 <small>Boolean blog app</small>
                             </button>
                         </div>
@@ -119,6 +119,161 @@
                         </div>
                     </div>
                 </header>
+                <section>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="card-left">
+                                <table class="table">
+                                    <h4 class="todo-title">Prossime Classi</h4>
+                                    <thead scope="table-light">
+                                        <tr>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col">Data inizio</th>
+                                            <th scope="col">ROI</th>
+                                            <th scope="col">Stato</th>
+                                            <th scope="col">Azioni</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 75</td>
+                                            <td>15 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><button type="button" class="p-0 px-2 btn btn-success">Done</button></td>
+                                            <td><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 76</td>
+                                            <td>16 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><button type="button" class="p-0 px-2 btn btn-success">Done</button></td>
+                                            <td><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 77</td>
+                                            <td>17 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><button type="button" class="p-0 px-2 btn btn-warning">process</button></td>
+                                            <td><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 78</td>
+                                            <td>18 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><button type="button" class="p-0 px-2 btn btn-success">Done</button></td>
+                                            <td><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 79</td>
+                                            <td>19 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><button type="button" class="p-0 px-2 btn btn-danger">failed</button>
+                                            <td><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 80</td>
+                                            <td>20 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><button type="button" class="p-0 px-2 btn btn-success">Done</button></td>
+                                            <td><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 81</td>
+                                            <td>21 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><button type="button" class="p-0 px-2 btn btn-danger">failed</button>
+                                            <td><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 82</td>
+                                            <td>22 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><button type="button" class="p-0 px-2 btn btn-success">Done</button></td>
+                                            <td><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="accordion" id="accordionExample">
+                                <div class="card-left">
+                                    <div class="todo-title">
+                                        <h4>F.A.Q.</h4>
+                                    </div>
+                                    <div class="accordion-item px-3">
+                                        <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Come aggiungere una nuova classe?
+                                        </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item px-3">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Come posso accedere alle informazioni del mio account?
+                                        </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item px-3">
+                                        <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Posso usare questa dashbord da mobile?
+                                        </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card-right">
+                                <h4 class="todo-title">Todo</h4>
+                                <ul id="list-group" class="list-group ms-white px-4">
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                        <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                        <label class="form-check-label" for="secondCheckbox">Lezione su Bootstrap 5 in classe #75</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                        <label class="form-check-label" for="thirdCheckbox">Controllare Username github studenti</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-right card">
+                                <img src="img/stats.jpeg" class="logo" alt="#">
+                                <div class="card-body">
+                                  <h5 class="card-title">Utenti Attivi</h5>
+                                  <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                </div>
+                                <ul class="list-group list-group-flush p-0">
+                                  <li class="list-group-item">Gennaio: 1200</li>
+                                  <li class="list-group-item">Febbraio: 800</li>
+                                  <li class="list-group-item">Marzo: 1500</li>
+                                </ul>
+                                <div class="card-body">
+                                  <a href="#" class="card-link">Visualizza report approfondito</a>                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
         </section>
         <!--/Main-->
