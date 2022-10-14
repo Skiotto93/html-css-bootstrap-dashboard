@@ -109,8 +109,30 @@ main {
 .table {
     border-radius: 10px;
     border: 1px solid #d2d2d2;
+    background-color: #fff;
 }
 .avatarimage {
     width: 2.5rem;
     height: 2.5rem;
+    border-radius: 50%;
+}
+.vb {
+    vertical-align: baseline;
+}
+.table-col-lg {
+    width: 50%;
+}
+.table-col-md {
+    width: 20%;
+}
+.table-col-sm {
+    width: 10%;
+}
+.ms-btn {
+    color: #1c71e8;
+    border: 1px solid #1c71e8;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-top: 15px;
 }

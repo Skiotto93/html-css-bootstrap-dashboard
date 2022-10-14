@@ -124,74 +124,99 @@
                         <div class="col-8">
                             <div class="card-left">
                                 <table class="table">
-                                    <h4 class="todo-title">Prossime Classi</h4>
-                                    <thead scope="table-light">
+                                    <div class="d-flex justify-content-between px-2">
+                                        <h4 class="todo-title mb-0">Prossime Classi</h4>
+                                        <button class="ms-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><strong>+</strong></button>
+                                        <!--Offcanvas-->
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Aggiungi Classe</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1" class="form-label">Nome</label>
+                                                        <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputPassword1" class="form-label">Data inizio</label>
+                                                        <input type="date" class="form-control" id="exampleInputPassword1">
+                                                    </div>                                 
+                                                    <button type="button" class="btn btn-primary">Salva</button>
+                                                    <button type="button" class="btn btn-warning">Reset</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    <thead scope="table">
                                         <tr>
-                                            <th scope="col">Nome</th>
-                                            <th scope="col">Data inizio</th>
-                                            <th scope="col">ROI</th>
-                                            <th scope="col">Stato</th>
-                                            <th scope="col">Azioni</th>
+                                            <th class="table-col-lg" scope="col">Nome</th>
+                                            <th class="table-col-md text-center" scope="col">Data inizio</th>
+                                            <th class="table-col-sm text-center" scope="col">ROI</th>
+                                            <th class="table-col-sm text-center" scope="col">Stato</th>
+                                            <th class="table-col-sm text-center" scope="col">Azioni</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 75</td>
-                                            <td>15 Febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td><button type="button" class="p-0 px-2 btn btn-success">Done</button></td>
-                                            <td><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 76</td>
-                                            <td>16 Febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td><button type="button" class="p-0 px-2 btn btn-success">Done</button></td>
-                                            <td><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 77</td>
-                                            <td>17 Febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td><button type="button" class="p-0 px-2 btn btn-warning">process</button></td>
-                                            <td><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 78</td>
-                                            <td>18 Febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td><button type="button" class="p-0 px-2 btn btn-success">Done</button></td>
-                                            <td><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 79</td>
-                                            <td>19 Febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td><button type="button" class="p-0 px-2 btn btn-danger">failed</button>
-                                            <td><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 80</td>
-                                            <td>20 Febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td><button type="button" class="p-0 px-2 btn btn-success">Done</button></td>
-                                            <td><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 81</td>
-                                            <td>21 Febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td><button type="button" class="p-0 px-2 btn btn-danger">failed</button>
-                                            <td><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 82</td>
-                                            <td>22 Febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td><button type="button" class="p-0 px-2 btn btn-success">Done</button></td>
-                                            <td><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
-                                        </tr>
-                                    </tbody>
+                                    <div class="me-3">
+                                        <tbody>
+                                            <tr class="vb">
+                                                <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 75</td>
+                                                <td class="table-col-md text-center">15 Febbraio 2021</td>
+                                                <td class="table-col-sm text-center">20%</td>
+                                                <td class="table-col-sm text-center"><button type="button" class="p-0 px-2 btn btn-success">Done</button></td>
+                                                <td class="table-col-sm text-center"><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                            </tr>
+                                            <tr class="vb">
+                                                <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 76</td>
+                                                <td class="table-col-md text-center">16 Febbraio 2021</td>
+                                                <td class="table-col-sm text-center">20%</td>
+                                                <td class="table-col-sm text-center"><button type="button" class="p-0 px-2 btn btn-success">Done</button></td>
+                                                <td class="table-col-sm text-center"><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                            </tr>
+                                            <tr class="vb">
+                                                <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 77</td>
+                                                <td class="table-col-md text-center">17 Febbraio 2021</td>
+                                                <td class="table-col-sm text-center">20%</td>
+                                                <td class="table-col-sm text-center"><button type="button" class="p-0 px-2 btn btn-warning">process</button></td>
+                                                <td class="table-col-sm text-center"><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                            </tr>
+                                            <tr class="vb">
+                                                <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 78</td>
+                                                <td class="table-col-md text-center">18 Febbraio 2021</td>
+                                                <td class="table-col-sm text-center">20%</td>
+                                                <td class="table-col-sm text-center"><button type="button" class="p-0 px-2 btn btn-success">Done</button></td>
+                                                <td class="table-col-sm text-center"><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                            </tr>
+                                            <tr class="vb">
+                                                <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 79</td>
+                                                <td class="table-col-md text-center">19 Febbraio 2021</td>
+                                                <td class="table-col-sm text-center">20%</td>
+                                                <td class="table-col-sm text-center"><button type="button" class="p-0 px-2 btn btn-danger">failed</button>
+                                                <td class="table-col-sm text-center"><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                            </tr>
+                                            <tr class="vb">
+                                                <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 80</td>
+                                                <td class="table-col-md text-center">20 Febbraio 2021</td>
+                                                <td class="table-col-sm text-center">20%</td>
+                                                <td class="table-col-sm text-center"><button type="button" class="p-0 px-2 btn btn-success">Done</button></td>
+                                                <td class="table-col-sm text-center"><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                            </tr>
+                                            <tr class="vb">
+                                                <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 81</td>
+                                                <td class="table-col-md text-center">21 Febbraio 2021</td>
+                                                <td class="table-col-sm text-center">20%</td>
+                                                <td class="table-col-sm text-center"><button type="button" class="p-0 px-2 btn btn-danger">failed</button>
+                                                <td class="table-col-sm text-center"><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                            </tr>
+                                            <tr class="vb">
+                                                <td><img class="avatarimage" src="img/class-avatar.jpg" alt="#"> Classe 82</td>
+                                                <td class="table-col-md text-center">22 Febbraio 2021</td>
+                                                <td class="table-col-sm text-center">20%</td>
+                                                <td class="table-col-sm text-center"><button type="button" class="p-0 px-2 btn btn-success">Done</button></td>
+                                                <td class="table-col-sm text-center"><button type="button" class="me-2 btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                            </tr>
+                                        </tbody>
+                                    </div>
                                 </table>
                             </div>
                             <div class="accordion" id="accordionExample">
