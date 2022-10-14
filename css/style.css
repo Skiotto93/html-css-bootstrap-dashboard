@@ -139,3 +139,8 @@ main {
     vertical-align: middle;
     margin-top: 15px;
 }
+.ms-btn:hover {
+    color: white;
+    border-color: white;
+    background-color: #1c71e8;
+}
