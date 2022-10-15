@@ -137,7 +137,7 @@ main {
     width: 20%;
 }
 .table-col-sm {
-    width: 120px;
+    width: 10%;
 }
 .ms-btn {
     color: #1c71e8;
@@ -155,4 +155,27 @@ main {
 }
 .wrap {
     flex-wrap: wrap;
+}
+@media (max-width: 576px) {
+    .table-col-md {
+        width: 5%;
+    }
+}
+@media (max-width: 768px) {
+    .table-col-md {
+        width: 5%;
+    }
+}
+@media (min-width: 992px) {
+    .d-lg-inline {
+        display: inline-block;
+    }
+    .table-col-lg {
+        width: 30%;
+    }
+} 
+@media (min-width: 1200px) {
+    .table-col-lg {
+        width: 40%;
+    }
 }
