@@ -81,6 +81,7 @@ aside {
 .main-header {
     background-color: var(--ms-secondary-color);
     color: #fff;
+    display: block;
 }
 main {
     width: calc(100vw - 9.375rem);
@@ -172,6 +173,9 @@ main {
     }
     .table-col-lg {
         width: 30%;
+    }
+    .main-header {
+        display: flex;
     }
 } 
 @media (min-width: 1200px) {
