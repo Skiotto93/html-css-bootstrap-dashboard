@@ -143,6 +143,9 @@ main {
     border: 1px solid #d2d2d2;
     background-color: #fff;
 }
+.p-fisso {
+    width: 16.5625rem;
+}
 .avatarimage {
     width: 2.5rem;
     height: 2.5rem;
@@ -216,3 +219,23 @@ main {
         width: 40%;
     }
 }
+/*----------------
+   ANIMATION
+----------------*/
+.main-header {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #1c72e8, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
